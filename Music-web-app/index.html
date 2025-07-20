@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>MUsic PlaYer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">MUSIC</div>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="lib-header">
+                    <h3><i class="fa-solid fa-play"></i>Your Library</i></h3>
+                    <i class="fa-solid fa-plus" style=" padding: 0.2rem; margin: 0.2rem; font-size: 1.3rem;"></i>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- we created thsese by using js -->
+                        <!-- <li>
+                            <img src="https://www.citypng.com/public/uploads/preview/apple-itunes-music-round-black-icon-hd-png-701751694974718ttchlw1rjn.png">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Playnow</span>
+                                <img src="https://www.friidesigns.com/wp-content/uploads/2018/11/white-play-icon-png-6.png">
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="#"><span>Legal</span></a></div>
+                    <div><a href="#"><span>Privacy Center</span></a></div>
+                    <div><a href="#"><span>Privacy Policy</span></a></div>
+                    <div><a href="#"><span>Cookies</span></a></div>
+                    <div><a href="#"><span>About Ads</span></a></div>
+                    <div><a href="#"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="header .m-1 .p-1">
+                <div class="nav">
+                    <div class="hamburger">
+                        <i id="bar" class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Home Icon -->
+                    <i class="fa-solid fa-house nav-icon"></i>
+
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search songs, artists..." />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="loginbtn">Login</button>
+                    <button class="signupbtn">Signup</button>
+                </div>
+            </div>
+            <div class="playlists bg-grey rounded m-1">
+                <h2>PlayLists</h2>
+                <div class="card_container">
+                    <div data-folder="cs" class="card">
+                        <!-- <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.insider.com/61c4e0c50173600018545dc8?width=700" class="img">
+                        <h2>Happy Hits</h2>
+                        <p>Boost your Mood</p> -->
+                    </div>
+                    <div data-folder="ncs" class="card">
+                        <!-- <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.insider.com/61c4e0c50173600018545dc8?width=700" class="img">
+                        <h2>Happy Hits</h2>
+                        <p>Boost your Mood</p> -->
+                    </div>
+                    <div data-folder="cs" class="card">
+                        <!-- <div class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <img src="https://i.insider.com/61c4e0c50173600018545dc8?width=700" class="img">
+                        <h2>Happy Hits</h2>
+                        <p>Boost your Mood</p> -->
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbutton-container">
+                        <div class="songbutton">
+                            <i id="previous" class="fa-solid fa-backward"></i><!--previous-->
+                            <i id="play" class="fa-solid fa-play"></i><!--play-->
+                            <i id="next" class="fa-solid fa-forward"></i><!--next-->
+                        </div>
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <div class="range">
+                                <input type="range" name="volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

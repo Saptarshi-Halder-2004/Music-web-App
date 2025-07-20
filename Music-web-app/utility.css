@@ -1,0 +1,12 @@
+.bg-grey{
+    background-color: #121212;
+}
+.rounded{
+    border-radius: 1rem;
+}
+.m-1{
+    margin: 0.4rem;
+}
+.p-1{
+    padding: 0.4rem;
+}
